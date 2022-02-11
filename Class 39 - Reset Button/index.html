@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+  apiKey: "AIzaSyBTuL2OSf6whleLcG93UEyQW_hwEqfd1_4",
+  authDomain: "multiplayer-cars-8c74e.firebaseapp.com",
+  databaseURL: "https://multiplayer-cars-8c74e-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "multiplayer-cars-8c74e",
+  storageBucket: "multiplayer-cars-8c74e.appspot.com",
+  messagingSenderId: "43844904064",
+  appId: "1:43844904064:web:11877ee3225b07f52ab265",
+  measurementId: "G-41HKYFTMCN"
+};
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
